@@ -28,7 +28,7 @@ class CreateItemsTable extends Migration
             $table->integer('postage');//送料
             $table->integer('orderlimit');//一回のオーダー制限
             $table->string('category',100);
-            $table->integer('shopid');//ショップID
+            $table->integer('shopid')->default(1);//ショップID
             $table->timestamps();
         });
     }
